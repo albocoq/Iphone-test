@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone 14 Pro Max</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="iphone">
+    <div class="iphone14">
+      <div class="homescreen">
+        <div class="operator-name">WxA</div>
+        <div class="dynamic-island"></div>
+        <div class="dynamic-island-camera"></div>
+        <div id="operator-icons" class="operator-icons" onclick="navgere()">
+          <i class="bi bi-reception-4"></i>
+          5G
+          <div class="battery">100</div> <!-- niveau de la batterie -->
+        </div>
+        <div class="date-area">
+
+          <span class="month"></span>
+          <span class="day-name"></span>
+          <span class="day"></span>
+        </div>
+
+        <div > <img class="fond" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409481881669662/img-bg.webp" alt=""></div>
+
+        <div class="clock-area"></div>
+        <div class="widgetarea">
+          <span class="widgetweather"><i class="bi bi-cloud-moon-fill"></i> 21°</span>
+          <span class="widget bell"><i class="bi bi-bell-fill sound"></i>
+            <i class="bi bi-bell-slash-fill quiet"></i></span>
+          <span class="widget"><i class="bi bi-spotify spotify"></i></span>
+          <span class="widget"><i class="bi bi-fuel-pump-fill fuelWidgetIcon"></i></span>
+        </div>
+      </div>
+      
+      <div class="home">
+        <div>
+          <div id="nav" class="nav">
+            <div id="linenav" class="linenav"></div>
+
+            <!--Faut mettre les logos et quand sa clique sa change de couleur -->
+            <div class="wifi">
+              <input type="button" id="circle" class="btn" value=""/>
+              <i id="fa-plane" class="fa-solid fa-plane"></i>
+              <input type="button" id="circle2" class="btn2" value=""/>
+              <i class="fa-solid fa-tower-broadcast"></i>
+              <input type="button" id="circle3" class="btn3" value=""/>
+              <i class="fa-solid fa-wifi"></i>
+              
+              <input type="button" id="circle4" class="btn4" value=""/>
+              <i class="fa-brands fa-bluetooth-b"></i>
+            </div>
+  
+            
+  
+  
+  
+            <div class="lumi">
+              
+            </div>
+  
+            <div class="son">
+  
+            </div>
+  
+            <div>
+              <input type="button" class="lock" value=""/>
+            </div>
+  
+            <div>
+              <input type="button" class="lune" value=""/>
+  
+            </div>
+  
+            <div>
+              <input type="button" class="parta" value=""/>
+  
+            </div>
+            
+            <div>
+              <input type="button" class="lum" value=""/>
+              
+            </div>
+  
+            <div>
+              <input type="button" class="crono" value=""/>
+              
+            </div>
+            
+            <div>
+              <input type="button" class="calcu" value=""/>
+              
+            </div>
+            <div>
+              <input type="button" class="camer" value=""/>
+              
+            </div>
+  
+          </div>
+
+
+
+          <a href="insta.php"><img class="imginsta" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409482972172418/Instagram_icon.png.webp"></a>
+          <div class="textinsta">
+            Instagram
+          </div>
+
+          <img class="imgmess"src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483760697446/messages-ios-icon-100667645-large.jpg"> 
+          <div class="textmess"> 
+            Message
+          </div>
+          <img class="imgtel" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483328704512/iphone-phone-logo.png">
+          <div class="texttel">
+            Télephone
+          </div>
+          <img class="imgjob" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409484687659060/954595.png">
+          <div class="textjob">
+            Job
+          </div> <br>
+          <img class="imgspo" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409484297572413/Spotify-PNG-Logo-1536x1534.png">
+          <div class="textspo">
+            Spotify
+          </div>
+          <img id="imgcalc" class="imgcalc" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409481449640036/download.png"> 
+          <div class="textcalc"> 
+            Calculatrice
+          </div>
+          <!--<img src="messages-ios-icon-100667645-large.jpg"> 
+          <div class="imgmess1"> 
+            
+          </div>
+          <img src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483328704512/iphone-phone-logo.png">
+          <div class="imgtel2">
+            
+          </div>-->
+
+        </div>
+
+
+
+
+
+        <div id="grad">
+          <div class="cercle">
+            <div class="circlecolor"><i class="fa-regular fa-mobile-notch"></i></div>
+            <svg viewBox="0 0 36 70" class="circle-svg">      
+              <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>      
+              <path class="percent" stroke-dasharray="30, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+              <text class="circlecolor" x="18" y="45" text-anchor="middle" dy="7" font-size="25">30%</text>    
+            </svg>
+            <div class="circlecolor"><i class="fa-regular fa-mobile-notch"></i></div>  
+            <svg viewBox="0 0 36 70" class="circle-svg">      
+                <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>      
+                
+                <text class="circlecolor" x="18" y="45" text-anchor="middle" dy="7" font-size="25"></text>    
+            </svg>  
+            <div class="circlecolor"><i class="fa-regular fa-mobile-notch"></i></div>
+            <svg viewBox="0 0 36 70" class="circle-svg">      
+                <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>      
+                
+                <text class="circlecolor" x="18" y="45" text-anchor="middle" dy="7" font-size="25"></text>    
+            </svg>  
+            <div class="circlecolor"><i class="fa-regular fa-mobile-notch"></i></div>
+            <svg viewBox="0 0 36 70" class="circle-svg">      
+                <path class="around" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>      
+                      
+                <text class="circlecolor" x="18" y="45" text-anchor="middle" dy="7" font-size="25"></text>    
+            </svg> 
+          </div>
+        </div>
+
+        <div class="rapide">
+          <div class="rapide1">
+            <img class="imgmess" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483760697446/messages-ios-icon-100667645-large.jpg"> 
+            <img class="imgtel2" src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483328704512/iphone-phone-logo.png">
+            <img src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483760697446/messages-ios-icon-100667645-large.jpg"> 
+            <img src="https://cdn.discordapp.com/attachments/997896077023907924/1070409483328704512/iphone-phone-logo.png">
+          </div>
+        </div>
+
+        <div id="telephone" class="telephone">
+          <div id="fav" class="cate fav">
+              <header>
+                <div class="croix"><i class="fa-sharp fa-solid fa-plus" style="color: rgb(80, 80, 255);"></i></div>
+                <h3>Favourites</h3>
+              </header>
+              <section>
+                <h1>No Favourites</h1>
+              </section>
+            </div>
+            <div id="rec" class="cate rec">
+              <div id="container-rec">
+                <div id="fond-rec"></div>
+                <button id="All">All</button>
+                <button id="Missed">Missed</button>
+              </div>
+              <h4>Edit</h4>
+              <h1><strong>Recents</strong></h1>
+            </div>
+            <div id="contact" class="cate contact">
+              <header>
+              
+                <div class="croix2"><i class="fa-sharp fa-solid fa-plus" style="color: rgb(80, 80, 255);"></i></div>
+              </header>
+              <h1>Contacts</h1>
+              
+              <input type="search" placeholder="Search">
+            </div>
+            <div id="appel" class="cate appel">
+              <div class="numero">
+                <input class="result" type="text" id="number-display" disabled>
+                <button onclick="appendNumber('1')" class="item num"><strong>1</strong><br></button>
+                <button onclick="appendNumber('2')" class="item num"><strong>2</strong>
+                  <strong><p>ABC</p></strong>
+                </button>
+                <button  onclick="appendNumber('3')" class="item num"><strong>3</strong>
+                  <strong><p>DEF</p></strong>
+                </button>
+                <button onclick="appendNumber('4')" class="item num"><strong>4</strong>
+                  <strong><p>GHI</p></strong>
+                </button>
+                <button onclick="appendNumber('5')" class="item num"><strong>5</strong>
+                  <strong><p>JKL</p></strong>
+                </button>
+                <button onclick="appendNumber('6')" class="item num"><strong>6</strong>
+                  <strong><p>MNO</p></strong>
+                </button>
+                <button onclick="appendNumber('7')" class="item num"><strong>7</strong>
+                  <strong><p>PQRS</p></strong>
+                </button>
+                <button onclick="appendNumber('8')" class="item num"><strong>8</strong>
+                  <strong><p>TUV</p></strong>
+                </button>
+                <button onclick="appendNumber('9')" class="item num"><strong>9</strong>
+                  <strong><p>WXYZ</p></strong>
+                </button>
+                <button onclick="appendNumber('*')" class="item asterix">*</button>
+                <button onclick="appendNumber('0')" class="item num"><strong>0</strong>
+                  <strong class="plus"><p >+</p></strong>
+                </button>
+                <button onclick="appendNumber('#')" class="item hashtag"><strong>#</strong></button>
+                <button class="noir"></button>
+                <button class="item appeller"><i class="fa-solid fa-phone"></i></button>
+                <button class="noir"></button>
+                
+              </div>
+          </div>
+          <div id="linetel" class="linetel"></div>
+          <div id="voice"class="cate voice">
+
+
+
+          </div>
+          <div class="categ">
+            <i id="star" class="fa-solid fa-star fa-lg"></i>
+            <p id="star" class="Favorites">Favorites</p>
+            <i id="clock" class="fa-solid fa-clock fa-lg"></i>
+            <p id="clock" class="Recents">Recents</p>
+            <i id="address" class="fa-solid fa-address-book fa-lg"></i>
+            <p id="address" class="Contacts">Contacts</p>
+            <i id="keyboard" class="fa-solid fa-keyboard fa-lg"></i>
+            <p id="keyboard" class="Keypad">Keypad</p>
+            <i id="voicemail" class="fa-solid fa-voicemail fa-lg"></i>
+            <p id="voicemail" class="Voicemail">Voicemail</p>
+          </div>
+
+          <div id="calculator" class="calculator">
+            <div class="display"></div>
+            <button class="clear">AC</button>
+            <button class="top operator">+/-</button>
+            <button class="top percent">%</button>
+            <button class="operator">/</button>
+            <button class="nume">7</button>
+            <button class="nume">8</button>
+            <button class="nume">9</button>
+            <button class="operator">*</button>
+            <button class="nume">4</button>
+            <button class="nume">5</button>
+            <button class="nume">6</button>
+            <button class="operator">-</button>
+            <button class="nume">1</button>
+            <button class="nume">2</button>
+            <button class="nume">3</button>
+            <button class="operator">+</button>
+            <button class="nume nume0">0</button>
+            <button class="vir operator">,</button>
+            <button class="eval">=</button>
+        </div>
+        <div id="linecalc" class="linecalc"></div>
+        </div>
+        
+
+
+
+
+
+
+      </div>
+
+
+      <!--<div class="notification">
+          <a href="" target="_blank">
+          <div><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="14" />
+            <b>Instagram.com</b></div>
+          <div class="notification-text">wlb.pt sent you a photo</div></a>
+        </div>-->
+
+      <div class="flashandcamera">
+        <img src="https://cdn.discordapp.com/attachments/997896077023907924/1070409482238165012/img-L.png" width="20" />
+        <i class="bi bi-camera-fill"></i>
+      </div>
+
+      <div class="line"></div>
+      <div class="bell-animation-area"></div>
+      <div class="bell-animation">
+        <span class="ntf-1"><i class="bi bi-bell-slash-fill"></i> <span>Quiet Mode On</span></span>
+        <span class="ntf-2"><i class="bi bi-bell-fill"></i> <span>Quiet Mode Off</span></span>
+      </div>
+
+      <i class="bi bi-geo-alt-fill"></i>
+      <div class="fuelarea">
+        <img src="https://cdn.discordapp.com/attachments/997896077023907924/1070409482741481492/img-map.jpg" alt="Maps">
+        <div class="fuel-ntf-app">
+          <span><b>Aim:</b> Petrol Ofisi</span><br>
+          <span><b>remaining time:</b> 15 min</span><br>
+          <span><b>mode of transportationi:</b> Car</span>
+        </div>
+      </div>
+
+      <i class="bi bi-soundwave"></i>
+      <div class="music-player">
+
+
+        <div class="music-details">
+          <p>Menace Santana</p>
+          <p class="c-gray">MaDrug</p>
+
+          <audio id="wlb" loop controls
+            src="" ></audio>
+
+          <div class="player">
+            <i class="bi bi-skip-backward-fill"></i>
+            <button id="oynat">
+              <i class="bi bi-play-fill"></i>
+              <i class="bi bi-pause-fill"></i>
+            </button>
+            <i class="bi bi-skip-forward-fill"></i>
+            <i class="bi bi-cast"></i>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
